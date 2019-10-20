@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rtfe>
+	<information>
+		<date>19/10/2019</date>
+		<author>Alexandre Cailliaud</author>
+	</information>
+	
+	<users>
+		<user>
+			<uID>12389405123056</uID>
+			<firstName>Robert</firstName>
+			<lastName>Baratheon</lastName>
+			<email>robert.baratheon@gmail.com</email>
+		</user>
+		<user>
+			<uID>12389405123056</uID>
+			<firstName>Henrietta</firstName>
+			<lastName>Helve</lastName>
+			<email>henrietta.helve@gmail.com</email>
+		</user>
+		<user>
+			<uID>12389405123057</uID>
+			<firstName>Nicolas</firstName>
+			<lastName>Flamel</lastName>
+			<email>nicolas.flamel@gmail.com</email>
+		</user>
+		<user>
+			<uID>12389405323056</uID>
+			<firstName>Achille</firstName>
+			<lastName>Talon</lastName>
+			<email>achille.talon@gmail.com</email>
+		</user>
+		<user>
+			<uID>12389405143056</uID>
+			<firstName>Bilbon</firstName>
+			<lastName>Saquet</lastName>
+			<email>bilbon.saquet@gmail.com</email>
+		</user>
+	</users>
+
+</rtfe>

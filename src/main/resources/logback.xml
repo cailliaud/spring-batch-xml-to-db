@@ -1,0 +1,36 @@
+<configuration>
+	<property name="LOG_FOLDER" value="logs/" />
+
+	<timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"
+		timeReference="contextBirth" />
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+		<file>${LOG_FOLDER}/bad_records_${bySecond}.log</file>
+		...
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+			by default -->
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} - %msg%n</pattern>
+		</encoder>
+		<param name="Append" value="false" />
+	</appender>
+
+
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+			by default -->
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} %-5level %class{0} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<root level="info">
+		<appender-ref ref="STDOUT" />
+	</root>
+	
+	<logger name="com.example.demo" level="error"
+        additivity="true">
+        <appender-ref ref="FILE"/>
+    </logger>
+
+</configuration>
